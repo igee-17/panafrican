@@ -6,11 +6,22 @@ const postCollectionRef = collection(db, "stayUpdated");
 
 
 export const getPosts = async (setPostLists, setLoading) => {
-  const data = await getDocs(postCollectionRef);
-  const posts = data.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
-  setPostLists(posts);
-  setLoading(false);
-  localStorage.setItem("posts", JSON.stringify(posts));
+  try {
+    console.log('fetching posts');
+    const data = await getDocs(postCollectionRef);
+    console.log(`data suppposed to be here: ${data}`);
+    const posts = data.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+    console.log(`posts suppposed to be here: ${posts}`);
+    setPostLists(posts);
+    setLoading(false);
+    localStorage.setItem("posts", JSON.stringify(posts));
+
+  } catch (error) {
+    console.log(error);
+    console.log('there was an error fetching the posts');
+
+  }
+
 };
 
 
