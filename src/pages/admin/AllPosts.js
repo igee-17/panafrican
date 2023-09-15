@@ -20,7 +20,7 @@ const AllPosts = () => {
   useEffect(() => {
     window.scroll(0, 0);
     setLoading(true);
-    return () => getPosts(setPosts, setLoading);
+    getPosts(setPosts, setLoading);
   }, []);
 
   // console.log(posts);
