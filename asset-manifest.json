@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/panafrican/static/css/main.4624fb50.css",
-    "main.js": "/panafrican/static/js/main.1adef50b.js",
+    "main.js": "/panafrican/static/js/main.5010b7f7.js",
     "static/media/brochure.pdf": "/panafrican/static/media/brochure.03f11445c8ef3faf8aa1.pdf",
     "static/media/alumniBg.png": "/panafrican/static/media/alumniBg.a53ca1451e7c5a8f1a26.png",
     "static/media/errorImage.jpg": "/panafrican/static/media/errorImage.f794f8c278e7dc061491.jpg",
@@ -177,10 +177,10 @@
     "static/media/minus.svg": "/panafrican/static/media/minus.8672ab2a8712f5aecb7401423a6a6418.svg",
     "static/media/arrowLeft.svg": "/panafrican/static/media/arrowLeft.8285f4806e7bf425e0b4fee5d17f97ba.svg",
     "main.4624fb50.css.map": "/panafrican/static/css/main.4624fb50.css.map",
-    "main.1adef50b.js.map": "/panafrican/static/js/main.1adef50b.js.map"
+    "main.5010b7f7.js.map": "/panafrican/static/js/main.5010b7f7.js.map"
   },
   "entrypoints": [
     "static/css/main.4624fb50.css",
-    "static/js/main.1adef50b.js"
+    "static/js/main.5010b7f7.js"
   ]
 }
