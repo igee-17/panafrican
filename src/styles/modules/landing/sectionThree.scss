@@ -1,0 +1,107 @@
+.section-three {
+  background: #062644;
+  color: white;
+  padding: 115px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+
+  & .heading {
+    // color: black;
+    width: fit-content;
+    margin: 0 auto;
+
+    & h1 {
+      font-family: "Arial";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.125rem;
+      line-height: 107%;
+      text-transform: uppercase;
+
+      color: #ffffff;
+
+      @media (max-width: $breakpoint-tablet) {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 107%;
+      }
+    }
+  }
+
+  & .bottom {
+    background: white;
+    color: #474747;
+    // width: 85%;
+    width: fit-content;
+    max-width: 1749.6px;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-tablet) {
+      max-width: 250px;
+    }
+
+    & .items {
+      display: flex;
+      // justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      @media (max-width: $breakpoint-tablet) {
+        justify-content: center;
+        width: 250px;
+        // width: 100%;
+      }
+
+      & .item {
+        padding: 78px 25px;
+        height: 206px;
+        max-width: 249px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        // border: 2px solid red;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+        cursor: pointer;
+
+        @media (max-width: $breakpoint-tablet) {
+          width: 250px;
+        }
+
+        &:hover {
+          //   color: white;
+          background: #062644;
+
+          & p {
+            transition: var(--transition-fast);
+            transform: scale(1.11);
+          }
+
+          & img {
+            transition: var(--transition-fast);
+            transform: scale(1.11);
+          }
+        }
+
+        & p {
+          text-align: center;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          text-transform: capitalize;
+        }
+
+        & img {
+          height: 35px;
+          width: 35px;
+        }
+      }
+    }
+  }
+}

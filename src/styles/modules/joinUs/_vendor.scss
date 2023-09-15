@@ -1,0 +1,266 @@
+.vendor {
+  & .section-two {
+    & .center {
+      max-width: 1104px;
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 4px 4px 26px 0px rgba(189, 189, 189, 0.25);
+      width: 85%;
+      margin: 0 auto;
+
+      & .heading {
+        background: #152344;
+        padding: 20px 44px;
+
+        p {
+          color: #fff;
+          font-family: Open Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 107%; /* 21.4px */
+        }
+      }
+
+      & form {
+        padding: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media (max-width: $breakpoint-tablet) {
+          padding: 30px;
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+          padding: 20px;
+        }
+
+        & label {
+          color: #000;
+          text-align: justify;
+          font-family: Kozuka Gothic Pro;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        & input,
+        select,
+        textarea {
+          height: 49px;
+          border-radius: 5px;
+          border: 1px solid #e0e0e0;
+          background: #f3f3f3;
+          padding: 10px;
+          width: 100%;
+
+          &::placeholder {
+            color: #000;
+            text-align: justify;
+            font-family: Kozuka Gothic Pro;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+
+        & input {
+          padding-left: 70px;
+        }
+
+        & textarea {
+          resize: none;
+        }
+
+        & .input,
+        .item {
+          position: relative;
+          //   border: 2px solid red;
+
+          & img {
+            position: absolute;
+            top: 13px;
+            left: 16px;
+          }
+        }
+        & .name {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        & .address {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          & .items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            row-gap: 10px;
+
+            @media (max-width: $breakpoint-tablet) {
+            grid-template-columns: 1fr;
+            }
+          }
+        }
+
+        & .information {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 22px;
+          row-gap: 10px;
+
+          @media (max-width: $breakpoint-tablet) {
+            grid-template-columns: 1fr;
+            }
+
+          & .item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            
+          }
+        }
+
+        & .account-type {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          & span {
+            color: #000;
+            text-align: justify;
+            font-family: Kozuka Gothic Pro;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          & .options {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            @media (max-width: $breakpoint-tablet) {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+
+            & .option {
+              display: flex;
+              gap: 10px;
+              align-items: center;
+            }
+
+            & input {
+              width: 15px;
+              height: 15px;
+              display: flex;
+              //   align-items: center;
+              justify-content: center;
+              //   height:;
+
+              &:checked {
+                width: 15px;
+                background: #152344;
+                border: 2px solid #152344;
+                color: red;
+              }
+            }
+
+            & input[type="radio"]:checked {
+              width: 15px;
+              background: #152344;
+              border: 2px solid #152344;
+              color: red;
+            }
+          }
+        }
+
+        & .nature {
+          height: 236px;
+        }
+
+        & .text-details {
+          height: 131px;
+        }
+
+        & h3 {
+          color: #474747;
+          font-family: Open Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 107%; /* 21.4px */
+        }
+
+        & .upload-text {
+          color: #000;
+          text-align: justify;
+          font-family: Kozuka Gothic Pro;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        & .upload-input {
+          display: flex;
+          //   border: 2px solid blue;
+
+          & input {
+            // width: 100%;
+            display: none;
+          }
+          & label {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border: 1px solid #e0e0e0;
+            background: #f3f3f3;
+            height: 49px;
+
+            & .upload-btn {
+              border-left: 0.5px solid #474747;
+              border-right: 0.5px solid #474747;
+              padding: 9px 19px;
+            }
+            & img {
+              height: 25px;
+              width: 25px;
+            }
+          }
+
+          & .cancel-btn {
+            padding: 9px 19px;
+            background: #f3f3f3;
+            border: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+        & .submit-btn {
+          height: 64px;
+          background: #152344;
+          border: none;
+          cursor: pointer;
+          color: #fff;
+          font-family: Open Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 107%; /* 21.4px */
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

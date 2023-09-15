@@ -1,0 +1,83 @@
+@import "./modules/variables.scss";
+@import "./modules/navbar.scss";
+@import "./modules/landing/landingMain.scss";
+@import "./modules/landing/sectionOne.scss";
+@import "./modules/landing/sectionTwo.scss";
+@import "./modules/landing/sectionThree.scss";
+@import "./modules/landing/sectionFour.scss";
+@import "./modules/about/sectionOne.scss";
+@import "./modules/about/sectionTwo.scss";
+@import "./modules/about/sectionThree.scss";
+@import "./modules/about/sectionFour.scss";
+@import "./modules/about/bioPage.scss";
+@import "./modules/portfolio/portfolio.scss";
+@import "./modules/joinUs/joinus.scss";
+@import "./modules/joinUs/vendor.scss";
+@import "./modules/joinUs/career.scss";
+@import "./modules/contact.scss";
+@import "./modules/resources/resources";
+@import "./modules/csr/csr";
+@import "./modules/admin/admin";
+@import "./modules/admin/create-post";
+@import "./modules/admin/dashboard";
+
+@import "./modules/footer.scss";
+@import "./modules/error.scss";
+
+// body {
+//   &::-webkit-scrollbar {
+//     width: 6px;
+//   }
+
+//   /* Track */
+//   &::-webkit-scrollbar-track {
+//     background: transparent;
+//   }
+
+//   /* Handle */
+//   &::-webkit-scrollbar-thumb {
+//     background: var(--primary-blue);
+//     border-radius: 100px;
+//   }
+
+//   /* Handle on hover */
+//   &::-webkit-scrollbar-thumb:hover {
+//     background: grey;
+//   }
+// }
+
+.animation {
+  position: absolute;
+  top: -800px;
+  left: -108%;
+
+  @media (max-width: $breakpoint-tablet) {
+    top: -1300px;
+    left: -1600px;
+    // height: 250px;
+    // width: 650px;
+  }
+}
+
+.animate-left {
+  left: unset;
+  top: -800px;
+  right: -108%;
+
+  @media (max-width: $breakpoint-tablet) {
+    top: -1200px;
+    right: -1100px;
+    // height: 250px;
+    // width: 650px;
+  }
+}
+
+.stay-updated,
+.career,
+.alumni,
+.csr,
+.contact {
+  & .animation {
+    top: -100px;
+  }
+}

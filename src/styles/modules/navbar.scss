@@ -1,0 +1,327 @@
+.pre-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  height: 63px;
+  top: 10px;
+
+  @media (max-width: $breakpoint-xlarge) {
+  }
+  @media (max-width: $breakpoint-large) {
+    display: none;
+  }
+
+  & .center {
+    color: white;
+    background: #062644;
+    border-radius: 194px;
+    transition: var(--transition);
+    margin: 0 auto;
+    max-width: 1600px;
+    // width: 90%;
+    display: flex;
+    position: relative;
+
+    & .item {
+      display: flex;
+      padding: 14px 30px;
+      align-items: center;
+      gap: 15px;
+
+      & p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: -0.045em;
+
+        color: #ffffff;
+      }
+    }
+
+    & .predropdown {
+      transition: var(--transition);
+      background: #a6a6a7;
+      border-radius: 194px;
+      cursor: pointer;
+    }
+  }
+}
+
+.pre-nav-selected {
+  & .center {
+    transition: var(--transition);
+    background: #a6a6a7;
+
+    & .predropdown {
+      background: #062644;
+      transition: var(--transition);
+    }
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 86px;
+  z-index: 5;
+  width: 100%;
+  transition: var(--transition);
+  margin: 0 auto;
+  // border: 2px solid red;
+
+  @media (max-width: $breakpoint-large) {
+    top: 23px;
+    // max-width: 06px;
+  }
+  @media (max-width: $breakpoint-tablet) {
+    // top: 23px;
+    width: 100vw;
+  }
+
+  & .nav-center {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 194px;
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+    margin: 0 auto;
+    padding: 45px 114px;
+    align-items: center;
+    max-width: 1664px;
+    height: 120px;
+    position: relative;
+    transition: var(--transition);
+    gap: 30px;
+
+    @media (max-width: $breakpoint-tablet) {
+      padding: 39px;
+      max-width: 406px;
+    }
+
+    & .logo {
+      & img {
+        @media (max-width: $breakpoint-large) {
+          height: 54px;
+          width: 154px;
+        }
+        @media (max-width: $breakpoint-tablet) {
+          height: fit-content;
+          max-height: 70px;
+          width: 124px;
+          object-fit: contain;
+        }
+      }
+    }
+
+    & .nav-items {
+      display: flex;
+      gap: 40px;
+      transition: var(--transition-fast);
+      // border: 2px solid blue;
+      // max-width: 70%;
+
+      @media (max-width: $breakpoint-large) {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        // transform: translateY(-30px);
+        flex-direction: column;
+        // background: white;
+        background: rgba(255, 255, 255, 0.9);
+
+        width: 100%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 40px;
+        height: 0;
+        padding: 0 114px;
+      }
+
+      & .item {
+        display: flex;
+        // gap: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        // position: relative;
+        flex-direction: column;
+        width: fit-content;
+        // border: 2px solid red;
+        padding-bottom: 10px;
+
+        @media (max-width: $breakpoint-large) {
+          display: none;
+        }
+
+        & a,
+        p {
+          text-decoration: none;
+          color: var(--primary-blue);
+          font-weight: 700;
+
+          @media (max-width: $breakpoint-tablet) {
+            font-size: 12px;
+          }
+
+          &:hover {
+            // color: white;
+            cursor: pointer;
+          }
+        }
+
+        & .drop-item {
+        
+        &:hover {
+            color: white;
+            // cursor: pointer;
+          }
+        }
+
+        & span {
+          transform: translateX(5px);
+          cursor: pointer;
+        }
+      }
+
+      & .border {
+        // border: 2px solid blue;
+        // border-bottom: 2px solid var(--primary-blue);
+        // border-width: 0;
+        position: relative;
+        min-width: max-content;
+
+        &:after {
+          content: "";
+          width: 0%;
+          height: 2px;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: var(--primary-blue);
+          transition: var(--transition);
+        }
+
+        &:hover {
+          &:after {
+            // border-width: 2px;
+            transform-origin: left;
+            transition: var(--transition);
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    & .active {
+      transition: var(--transition-fast);
+      // border-radius: 14px;
+      border-radius: 0;
+      border-bottom-left-radius: 54px;
+      border-bottom-right-radius: 54px;
+
+      @media (max-width: $breakpoint-large) {
+        height: auto;
+        padding: 45px 114px;
+      }
+
+      @media (max-width: $breakpoint-tablet) {
+        padding: 39px;
+        max-width: 406px;
+      }
+
+      & .item {
+        @media (max-width: $breakpoint-large) {
+          display: flex;
+        }
+      }
+    }
+
+    & .menu {
+      display: none;
+      cursor: pointer;
+
+      @media (max-width: $breakpoint-large) {
+        display: flex;
+      }
+    }
+  }
+
+  & .open {
+    transition: var(--transition);
+
+    @media (max-width: $breakpoint-tablet) {
+      border-radius: 40px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+.dropdown {
+  position: fixed;
+  // top: 60px;
+  // left: 0;
+  background: white;
+  // background: rgba(255, 255, 255, 0.9);
+  // border: 2px solid red;
+  padding: 24px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 5;
+
+  @media (max-width: $breakpoint-tablet) {
+    max-width: 300px;
+  padding: 14px;
+}
+
+  & a,
+  p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.2px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.045em;
+
+    color: #152344;
+    width: 320px;
+    text-transform: capitalize;
+    padding: 12px 24px;
+    transition: var(--transition);
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 6px;
+
+    @media (max-width: $breakpoint-tablet) {
+      max-width: 240px;
+    padding: 8px 20px;
+    font-size: 14.2px;
+  }
+
+    &:hover {
+      background: #062644;
+      color: white;
+      transition: var(--transition);
+    }
+
+    & a,
+    p {
+      &:hover {
+        background: #062644;
+        color: white;
+        transition: var(--transition);
+      }
+    }
+  }
+}
+
+.pre-dropdown {
+  & p {
+    width: 215px;
+  }
+}

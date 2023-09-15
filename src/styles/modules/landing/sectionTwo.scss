@@ -1,0 +1,78 @@
+.section-two {
+  padding: 108px 40px;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint-tablet) {
+  padding: 108px 0px;
+  }
+
+  .section-center {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    max-width: 1258px;
+    margin: 0 auto;
+    gap: 214px;
+
+    @media (max-width: $breakpoint-tablet) {
+      gap: 7px;
+    }
+
+    @media (max-width: $breakpoint-large) {
+      // top: 23px;
+      // max-width: 06px;
+      flex-direction: column;
+    }
+
+    & img {
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
+
+      @media (max-width: $breakpoint-tablet) {
+        height: 343px;
+        width: 343px;
+      }
+    }
+
+    & .text {
+      //   width: 444px;
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      // border: 2px solid red;
+      // width: 100%;
+
+      & h2 {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.125rem;
+        line-height: 107%;
+        text-transform: uppercase;
+        color: #062644;
+
+        @media (max-width: $breakpoint-tablet) {
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 107%;
+        }
+      }
+
+      & p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.37rem;
+        line-height: 30px;
+
+        color: #474747;
+
+        @media (max-width: $breakpoint-tablet) {
+          font-size: 20px;
+          line-height: 27px;
+        }
+      }
+    }
+  }
+}

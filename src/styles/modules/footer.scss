@@ -1,0 +1,150 @@
+footer {
+  background: var(--primary-blue);
+  position: relative;
+  z-index: 2;
+  color: white;
+  //   margin-top: 179px;
+  display: flex;
+  //   align-items: center;
+  justify-content: center;
+
+  & .footer-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 83px 0;
+    // display: flex;
+    justify-content: center;
+    // align-items: center;
+    width: 85%;
+    max-width: 1440px;
+
+    @media (max-width: $breakpoint-tablet) {
+      // display: none;
+      // display: flex;
+      // flex-wrap: wrap;
+      grid-template-columns: 1fr;
+      gap: 70px;
+    }
+
+    & .item {
+      // margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      & h2 {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 41px;
+        text-transform: capitalize;
+      }
+
+      & .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        & a,
+        p {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 27px;
+          text-transform: capitalize;
+          cursor: pointer;
+          display: flex;
+          // align-items: center;
+          justify-content: center;
+          gap: 20px;
+          color: white;
+          text-decoration: none;
+          width: fit-content;
+        }
+
+        & .email {
+          text-transform: lowercase;
+        }
+      }
+
+      & .input {
+        display: flex;
+        input {
+          padding: 12px 15px;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 27px;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+          border: none;
+          width: 193px;
+        }
+        & button {
+          padding: 12px 22px;
+          text-transform: uppercase;
+          background: #ed1c24;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 800;
+          border: none;
+          font-size: 18px;
+          cursor: pointer;
+          line-height: 27px;
+
+          color: #ffffff;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+      }
+
+      & h3 {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        text-transform: capitalize;
+      }
+
+      // & .icons {
+      //       display: flex;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    a
+      // }
+      & .icons {
+        display: flex;
+        gap: 10px;
+        // align-items: center;
+        // justify-content: center;
+
+        & .icon {
+          background: white;
+          border-radius: 50%;
+          padding: 11px;
+          height: 45px;
+          width: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
+    }
+
+    & .small {
+      display: none;
+
+      @media (max-width: $breakpoint-tablet) {
+        display: flex;
+      }
+    }
+
+    & .large {
+      @media (max-width: $breakpoint-tablet) {
+        display: none;
+      }
+    }
+  }
+}

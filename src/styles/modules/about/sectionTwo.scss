@@ -1,0 +1,36 @@
+.about-section-two {
+  padding: 73px;
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: 53px 33.4px;
+  }
+
+  & .text-center {
+    width: 80%;
+    max-width: 1014px;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+  }
+
+    & p {
+      text-align: justify;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      text-align: justify;
+      color: #474747;
+
+      @media (max-width: $breakpoint-tablet) {
+        color: #474747;
+        font-size: 20px;
+        line-height: normal;
+      }
+    }
+  }
+}

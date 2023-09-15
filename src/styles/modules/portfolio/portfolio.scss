@@ -1,0 +1,280 @@
+.margin {
+  margin-top: 324px;
+
+  @media (max-width: $breakpoint-tablet) {
+    margin-top: 190px;
+  }
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 156px;
+  position: relative;
+  overflow-x: hidden;
+
+  // border: 2px solid blue;
+  @media (max-width: $breakpoint-tablet) {
+    gap: 60px;
+  }
+
+  & .item {
+    display: flex;
+    max-width: 1424px;
+    margin: 0 auto;
+    gap: 48px;
+    align-items: center;
+    // border: 2px solid red;
+    width: fit-content;
+    justify-content: center;
+    height: fit-content;
+    transform: scale(0.76, 0.76);
+    // max-height: 478px;
+    // border: 2px solid red;
+    position: relative;
+    // z-index: 4;
+
+    @media (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+      transform: none;
+      height: auto;
+      padding: 0 43.5px;
+    }
+
+    & .text {
+      max-width: 506px;
+      height: 100%;
+      height: fit-content;
+    }
+
+    & .image {
+      height: 100%;
+
+      & img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    & h1 {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 107%;
+      /* identical to box height, or 43px */
+
+      display: flex;
+      align-items: center;
+      color: #474747;
+    }
+
+    & h2 {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 107%;
+      /* identical to box height, or 26px */
+
+      display: flex;
+      align-items: center;
+    }
+
+    & .description {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      & p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        color: #474747;
+      }
+    }
+
+    & a {
+      margin-top: 15px;
+      background: transparent;
+      border: none;
+
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height, or 150% */
+
+      display: flex;
+      align-items: center;
+      color: #0089ff;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  & .right-item {
+    @media (max-width: $breakpoint-tablet) {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.financial,
+.real-estate {
+  & .heading-text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    z-index: 3;
+    position: relative;
+
+    color: #474747;
+    width: 55%;
+    max-width: 1068px;
+    margin: 80px auto 0px;
+
+    @media (max-width: $breakpoint-tablet) {
+      // flex-direction: column-reverse;
+      width: 80%;
+      // background: red;
+      overflow-x: visible;
+    }
+  }
+
+  & .bottom {
+    & h1 {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 27px;
+      line-height: 107%;
+      /* identical to box height, or 29px */
+
+      color: #062644;
+    }
+  }
+}
+
+.hospitality {
+  .top {
+    // margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    // max-width: var(--max-width);
+    max-width: 1068px;
+    // border: 2px solid red;
+    margin: 80px auto 0;
+
+    & p {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      text-align: left;
+
+      color: #474747;
+      width: 80%;
+      max-width: 1068px;
+      margin: 0 auto;
+    }
+
+    & button {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height, or 150% */
+
+      display: flex;
+      align-items: center;
+
+      color: #0089ff;
+      background: transparent;
+      width: 99px;
+      border: none;
+    }
+  }
+}
+
+.paysharp {
+  // border: 2px solid red;
+
+  & .content {
+    // border: 2px solid blue;
+    max-width: 1481px;
+    // width: fit-content;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & h3 {
+      color: #192640;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    & h2 {
+      color: #192640;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 107%; /* 51.36px */
+      margin: 5px auto 53px;
+    }
+
+    & .paysharp-items {
+      // display: grid;
+      display: flex;
+      flex-wrap: wrap;
+      // grid-template-columns: repeat(autofill, minmax(468px, 80%));
+      // grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      width: 100%;
+      justify-content: center;
+
+      & .paysharp-item {
+        // border: 2px solid red;
+        border-radius: 5px;
+        background: #fff;
+        box-shadow: 4px 4px 12px 5px rgba(96, 95, 95, 0.25);
+        padding: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 483px;
+        min-width: 30%;
+        // width: 100%;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+}
