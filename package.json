@@ -1,6 +1,6 @@
 {
-  "homepage": "http://igee-17.github.io/PACwebsite",
-  "name": "pacweb",
+  "homepage": "http://igee-17.github.io/panafrican",
+  "name": "panafrican",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

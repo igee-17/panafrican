@@ -34,7 +34,7 @@ const SectionFour = () => {
     posts && localStorage.clear("posts");
     setLoading(true);
 
-    return () => getPosts(setPostLists, setLoading);
+    getPosts(setPostLists, setLoading);
   }, []);
 
 
